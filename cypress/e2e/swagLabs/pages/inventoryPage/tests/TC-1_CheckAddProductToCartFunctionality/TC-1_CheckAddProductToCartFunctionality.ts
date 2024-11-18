@@ -1,9 +1,9 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
-import InventoryPageActions from "../../utils/pageObjects/actions";
 import { Product } from "../../utils/types";
 import InventoryPageAssertions from "../../utils/assertions";
 import ShoppingCartPageActions from "../../../cartPage/shoppingCartPage/utils/actions";
 import ShoppingCartPageAssertions from "../../../cartPage/shoppingCartPage/utils/assertions";
+import InventoryPageActions from "../../utils/actions";
 
 const inventoryPageActions = new InventoryPageActions();
 const inventoryPageAssertions = new InventoryPageAssertions();
