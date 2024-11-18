@@ -14,7 +14,7 @@ declare global {
 
 const mainLogin = (user = DEFAULT_USER) => {
   // Log the selected user (for debugging purposes)
-  cy.log(`Logging in as: ${user}`);
+  cy.log(`Logging in as: ${user.userName}`);
 
   loginPageActions
     .openLoginPage()
