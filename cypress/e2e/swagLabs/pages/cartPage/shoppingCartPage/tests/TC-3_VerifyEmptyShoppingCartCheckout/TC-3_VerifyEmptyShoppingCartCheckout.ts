@@ -1,7 +1,7 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
-import NavigationMenuActions from "cypress/e2e/swagLabs/navigationMenu/utils/pageObject/actions";
-import ShoppingCartPageActions from "../../utils/pageObjects/actions";
-import ShoppingCartPageAssertions from "../../utils/pageObjects/assertions";
+import NavigationMenuActions from "cypress/e2e/swagLabs/navigationMenu/utils/actions";
+import ShoppingCartPageActions from "../../utils/actions";
+import ShoppingCartPageAssertions from "../../utils/assertions";
 
 const shoppingCartPageActions = new ShoppingCartPageActions();
 const shoppingCartPageAssertions = new ShoppingCartPageAssertions();

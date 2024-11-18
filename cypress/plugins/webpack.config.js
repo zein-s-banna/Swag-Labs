@@ -6,7 +6,6 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"],
     alias: {
-      "@pageObjects": path.resolve(__dirname, "../pageObjects"),
       "@support": path.resolve(__dirname, "../support"),
       "@plugins": path.resolve(__dirname, "../plugins"),
     },

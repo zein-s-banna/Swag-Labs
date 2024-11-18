@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import LoginPageActions from "../../utils/pageObjects/actions";
+import LoginPageActions from "../../utils/actions";
 import { generateUniqueUser } from "cypress/e2e/swagLabs/constants";
-import LoginPageAssertions from "../../utils/pageObjects/assertions";
+import LoginPageAssertions from "../../utils/assertions";
 
 const loginPageActions = new LoginPageActions();
 const loginPageAssertions = new LoginPageAssertions();

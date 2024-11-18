@@ -1,4 +1,4 @@
-import LoginPageActions from "cypress/e2e/swagLabs/pages/loginPage/utils/pageObjects/actions";
+import LoginPageActions from "cypress/e2e/swagLabs/pages/loginPage/utils/actions";
 import { DEFAULT_USER } from "../e2e/swagLabs/constants";
 import { UserCredentials } from "../e2e/swagLabs/types";
 

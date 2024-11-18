@@ -1,10 +1,10 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
-import ShoppingCartPageActions from "cypress/e2e/swagLabs/pages/cartPage/shoppingCartPage/utils/pageObjects/actions";
-import ShoppingCartPageAssertions from "cypress/e2e/swagLabs/pages/cartPage/shoppingCartPage/utils/pageObjects/assertions";
-import InventoryPageActions from "cypress/e2e/swagLabs/pages/inventoryPage/utils/pageObjects/actions";
-import InventoryPageAssertions from "cypress/e2e/swagLabs/pages/inventoryPage/utils/pageObjects/assertions";
+import ShoppingCartPageActions from "cypress/e2e/swagLabs/pages/cartPage/shoppingCartPage/utils/actions";
+import ShoppingCartPageAssertions from "cypress/e2e/swagLabs/pages/cartPage/shoppingCartPage/utils/assertions";
+import InventoryPageAssertions from "cypress/e2e/swagLabs/pages/inventoryPage/utils/assertions";
 import { Product } from "cypress/e2e/swagLabs/pages/inventoryPage/utils/types";
-import NavigationMenuActions from "../../../utils/pageObject/actions";
+import NavigationMenuActions from "../../../utils/actions";
+import InventoryPageActions from "cypress/e2e/swagLabs/pages/inventoryPage/utils/actions";
 
 const inventoryPageActions = new InventoryPageActions();
 const inventoryPageAssertions = new InventoryPageAssertions();
