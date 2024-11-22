@@ -10,7 +10,7 @@ const inventoryPageAssertions = new InventoryPageAssertions();
 const shoppingCartPageActions = new ShoppingCartPageActions();
 const shoppingCartPageAssertions = new ShoppingCartPageAssertions();
 
-let product: Product = {};
+let product: Product;
 let cartCount: number;
 let productIndex: number;
 
@@ -19,19 +19,15 @@ before(() => cy.login());
 Given("User is logged in and on the Inventory Page", () => {
   shoppingCartPageActions
     .getShoppingCartCount()
-    .then((count: number) => (cartCount = count));
+    .then((count) => (cartCount = count));
 
   inventoryPageActions
     .getProductsIndexesByAddToCartStatus()
-    .then((ItemsIndexes) => {
-      productIndex = ItemsIndexes[0];
-    });
+    .then((ItemsIndexes) => (productIndex = ItemsIndexes[0]));
 
   inventoryPageActions
     .getProductDetailsByIndex(productIndex)
-    .then((itemProduct) => {
-      product = { ...itemProduct };
-    });
+    .then((itemProduct) => (product = { ...itemProduct }));
 });
 
 When("User click on 'Add to cart' button in Inventory Page", () => {
