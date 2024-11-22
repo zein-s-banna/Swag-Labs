@@ -1,4 +1,4 @@
-import { Product } from "../types";
+import { Product } from "./types";
 
 class InventoryPageActions {
   // Retrieve the indexes of products with a button that matches the specified status
