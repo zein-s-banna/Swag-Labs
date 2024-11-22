@@ -11,10 +11,10 @@ const users: UserCredentials[] = [
 ];
 
 // Function to select a random user from the users array
-function getRandomUser(): UserCredentials {
+const getRandomUser = (): UserCredentials => {
   const randomIndex = Math.floor(Math.random() * users.length);
   return users[randomIndex];
-}
+};
 
 // Get a Random user to login and export it
 export const DEFAULT_USER = getRandomUser();
